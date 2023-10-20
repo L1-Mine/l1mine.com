@@ -1,6 +1,7 @@
 {
   "name": "email-signup",
-  "version": "0.0.0",
+  "description": "email-signup.l1mine.com",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",

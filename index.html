@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L1 Mine</title>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="static/background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+      <img src="static/l1mine-logo.svg" alt="Logo" class="logo" />
+      <div class="container">
+        <h1>Fully managed Bitcoin mining</h1>
+        <h2>Off grid, carbon negative, 7c kWh all in</h2>
+        <form id="emailForm">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit">Join Waitlist</button>
+        </form>
+        <div id="webgl"></div>
+      </div>
+    </div>
+
+    <div id="social-links">
+      <a
+        href="https://twitter.com/L1MineHQ"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="static/x-logo.svg" alt="X" />
+      </a>
+      <a
+        href="https://github.com/l1mine"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="static/github-logo.svg" alt="GitHub" />
+      </a>
+      <a
+        href="https://iris.to/npub182w49xkquqfcxhxgve8f8z545antxcm0jdkfqa8aa3rgmwpu0zcqnsp3ha"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="static/nostr-logo.svg" alt="nostr" />
+      </a>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.157.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.157.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script type="module" src="static/script.js"></script>
+  </body>
+</html>
