@@ -6,8 +6,7 @@ body, html {
 }
 
 body {
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,141,70,1) 100%);
+    background: url('fallback.jpg') no-repeat center center fixed;
 }
 
 #backgroundVideo {
@@ -20,9 +19,7 @@ body {
     height: auto;
     z-index: -1;
     object-fit: cover;
-    background: url('static/fallback.jpg') no-repeat center center fixed;
     transform: translate(-50%, -50%);
-    filter: brightness(80%);
 }
 
 #webgl > canvas{

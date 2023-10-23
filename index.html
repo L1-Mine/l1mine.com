@@ -3,14 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fully managed Bitcoin mining services.">
     <title>L1 Mine</title>
     <link rel="stylesheet" href="static/styles.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'none';
+        script-src 'self' 'unsafe-inline' 'unsafe-eval' unpkg.com localhost:3000;
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data:;
+        font-src 'self' data:;
+        connect-src 'self';
+        object-src 'none';
+        media-src 'self';
+        frame-src 'none';
+        manifest-src 'self' localhost:3000;
+    ">
   </head>
   <body>
-    <video autoplay muted loop id="backgroundVideo">
-      <source src="static/background.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
 
     <div class="content">
       <img src="static/l1mine-logo.svg" alt="Logo" class="logo" />
