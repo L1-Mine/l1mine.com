@@ -106,20 +106,20 @@ const renderWebGLCanvas = () => {
 };
 
 function loadVideoBackground() {
-  if (window.innerWidth > 1025) {
-    const video = document.createElement("video");
-    video.id = "backgroundVideo";
-    video.autoplay = true;
-    video.loop = true;
-    video.muted = true;
-    video.playsInline = true;
-    video.poster = "/static/fallback.jpg";
-    video.src = "/static/background.mp4";
-    document.body.appendChild(video);
-  }
+  const video = document.createElement("video");
+  video.id = "backgroundVideo";
+  video.autoplay = true;
+  video.loop = true;
+  video.muted = true;
+  video.playsInline = true;
+  video.poster = "/static/fallback.jpg";
+  video.src = "/static/background.mp4";
+  document.body.appendChild(video);
 }
 
 window.addEventListener("load", () => {
-  loadVideoBackground();
-  renderWebGLCanvas();
+  if (window.innerWidth > 1025) {
+    loadVideoBackground();
+    renderWebGLCanvas();
+  }
 });
