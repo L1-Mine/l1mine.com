@@ -2,8 +2,9 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const email = this.querySelector('input[type="email"]').value;
+  const url = window.location.protocol === "http:" ? "http://localhost:8787" : "https://email-signup.l1mine.com";
 
-  fetch("https://email-signup.l1mine.com", {
+  fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
